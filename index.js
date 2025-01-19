@@ -19,11 +19,11 @@ const quiz = [
   function shuffleQuiz(quiz) {
       for (let i = quiz.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [quiz[i], quiz[j]] = [quiz[j], quiz[i]]; // Swap elements
+      [quiz[i], quiz[j]] = [quiz[j], quiz[i]];
    }
   }
 
-shuffleQuiz(quiz); // Shuffle the quiz questions when the page loads
+shuffleQuiz(quiz);
 
   let currentQuestionIndex = 0;
   let score = 0;
@@ -69,14 +69,12 @@ if (selectedOption === correctAnswer) {
   completedQuestions.push({ question: quiz[currentQuestionIndex].question, correct: false });
 }
 
-// Gör alla knappar inaktiverade utom "Nästa"
 document.querySelectorAll(".options button").forEach(button => {
   button.disabled = true;
 });
 
-// Visa "Nästa" knappen och gör den klickbar
 nextButton.style.display = "block";
-nextButton.disabled = false; // Sätt knappen som aktiverad
+nextButton.disabled = false;
   }
 
   function nextQuestion() {
