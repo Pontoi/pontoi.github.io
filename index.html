@@ -109,6 +109,15 @@
       { question: "Vad betyder 'doué-e'?", options: ["Trög", "Begåvad", "Svag"], answer: 1 },
     ];
 
+    function shuffleQuiz(quiz) {
+        for (let i = quiz.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [quiz[i], quiz[j]] = [quiz[j], quiz[i]]; // Swap elements
+     }
+    }
+
+shuffleQuiz(quiz); // Shuffle the quiz questions when the page loads
+
     let currentQuestionIndex = 0;
     let score = 0;
     let wrongAnswers = 0;
@@ -185,6 +194,7 @@
         score = 0;
         wrongAnswers = 0;
         completedQuestions = [];
+        shuffleQuiz(quiz);
         resultContainer.innerHTML = '';
         loadQuestion();
       }, 5000);
