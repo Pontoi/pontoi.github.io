@@ -5,7 +5,7 @@ const quiz = [
     { question: "Vad betyder 'depuis'?", options: ["Före", "Sedan", "Under"], answer: 1 },
     { question: "Vad betyder 'trop vite'?", options: ["För snabbt", "För långsamt", "Väldigt försiktigt"], answer: 0 },
     { question: "Vad betyder 'fracturé-e'?", options: ["Liten", "Bruten", "Stark"], answer: 1 },
-    { question: "Vad betyder 'ensuite'?", options: ["Före", "Därefter", "Samtidigt"], answer: 0 },
+    { question: "Vad betyder 'ensuite'?", options: ["Därefter", "Före", "Samtidigt"], answer: 0 },
     { question: "Vad betyder 'on sait'?", options: ["Man tror", "Man vet", "Man vill"], answer: 1 },
     { question: "Vad betyder 'boulot'?", options: ["Jobb", "Skola", "Mat"], answer: 0 },
     { question: "Vad betyder 'patron'?", options: ["Chef", "Anställd", "Kund"], answer: 0 },
