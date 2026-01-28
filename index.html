@@ -1,23 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Franska Glosor</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pierre Bourdieu – Studieresurs</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #171a21;
+      --text: #e6e6eb;
+      --muted: #a1a1b3;
+      --accent: #7c8cff;
+      --accent-soft: rgba(124,140,255,0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #0f1115, #0b0d12);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 1.5rem 4rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    section {
+      background: var(--card);
+      border-radius: 1.2rem;
+      padding: 2rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    section h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    ul {
+      margin-left: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      color: var(--muted);
+    }
+
+    .highlight {
+      background: var(--accent-soft);
+      padding: 1rem;
+      border-left: 4px solid var(--accent);
+      border-radius: 0.5rem;
+      margin: 1.5rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Franska Glosor</h1>
-  </header>
-  <div class="container">
-    <div id="quiz-container"></div>
-    
-    <div class="score-tracker" id="score-tracker"></div>
-    
-    <div class="result" id="result"></div>
-  </div>
 
-  <script src="index.js"></script>
+  <header>
+    <h1>Pierre Bourdieu</h1>
+    <p>En modern studieresurs om språk, klädsmak och varför samhället återskapas</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Vem var Pierre Bourdieu?</h2>
+      <p>Pierre Bourdieu var en fransk sociolog som studerade hur makt, ojämlikhet och sociala skillnader skapas och återskapas i samhället. Hans teorier används ofta för att förstå varför vissa individer och grupper har lättare att lyckas än andra, trots att samhället ofta beskrivs som jämlikt.</p>
+      <p>Bourdieu menade att framgång inte enbart beror på individuella val eller ansträngning, utan i hög grad påverkas av uppväxt, utbildning, språk, smak och tillgång till olika resurser. Många av dessa resurser är osynliga och tas för givna av dem som redan har dem.</p>
+    </section>
+
+    <section>
+      <h2>Centrala begrepp i Bourdieus teori</h2>
+
+      <h3>Habitus</h3>
+      <p>Habitus är de vanor, erfarenheter, värderingar och sätt att tänka som människor utvecklar genom sin uppväxt och sina livsvillkor. Habitus formas tidigt i livet genom familj, klassbakgrund, utbildning och miljö och följer sedan med individen genom livet.</p>
+      <p>Habitus påverkar hur vi talar, hur vi klär oss, vilka val vi gör och vad vi uppfattar som möjligt eller omöjligt. Det gör att vissa personer känner sig hemma i skolan eller på arbetsmarknaden, medan andra känner sig osäkra eller malplacerade.</p>
+
+      <h3>Fält</h3>
+      <p>Ett fält är ett socialt sammanhang där människor möts och konkurrerar enligt särskilda regler. Exempel på fält är skolan, arbetsmarknaden, akademin, kulturvärlden och olika subkulturer.</p>
+      <p>Varje fält har sina egna normer för vad som räknas som värdefullt. Det som ger status i ett fält kan vara helt oviktigt eller till och med negativt i ett annat.</p>
+
+      <h3>Kapital</h3>
+      <p>Bourdieu använder begreppet kapital för att beskriva olika resurser som ger makt och möjligheter i samhället.</p>
+      <ul>
+        <li><strong>Ekonomiskt kapital:</strong> pengar, inkomst, egendom och materiella resurser. Ekonomiskt kapital kan ofta omvandlas till andra former av kapital.</li>
+        <li><strong>Kulturellt kapital:</strong> utbildning, språklig förmåga, kunskap, smak och kulturella referenser. Detta kapital värderas högt i skolan och akademin.</li>
+        <li><strong>Socialt kapital:</strong> kontakter, nätverk och relationer som kan ge tillgång till möjligheter som jobb, utbildning eller inflytande.</li>
+        <li><strong>Symboliskt kapital:</strong> status, prestige och erkännande. Symboliskt kapital uppstår när andra former av kapital uppfattas som legitima och värdefulla.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Språk som ett verktyg för att lyckas i sociala sammanhang</h2>
+      <p>Med utgångspunkt i Pierre Bourdieus teori kan språket förstås som ett mycket viktigt verktyg för att lyckas i olika sociala sammanhang. Hur man talar, vilka ord man använder och i vilka situationer man vågar uttrycka sig påverkar hur man blir bemött av andra.</p>
+
+      <h3>Språk och habitus</h3>
+      <p>Habitus påverkar hur vi använder språket. En person som vuxit upp i ett hem där man diskuterar, argumenterar och använder ett formellt språk utvecklar ofta en språklig säkerhet. Detta gör att personen lättare kan anpassa sitt språk till skolan eller arbetslivet.</p>
+
+      <h3>Språk som kulturellt kapital</h3>
+      <p>Språklig förmåga är en form av kulturellt kapital. Att kunna tala korrekt, använda ett avancerat ordförråd och förstå akademiskt språk ger fördelar i många sociala sammanhang, särskilt inom utbildningssystemet.</p>
+      <p>Skolan värderar ofta ett visst sätt att uttrycka sig, vilket gör att elever med rätt kulturellt kapital har bättre förutsättningar att lyckas.</p>
+
+      <h3>Språk och symboliskt kapital</h3>
+      <p>När en persons språk uppfattas som professionellt eller korrekt kan det ge symboliskt kapital i form av status och respekt. Andra lyssnar mer, tar personen på större allvar och ger större inflytande.</p>
+
+      <div class="highlight">
+        Språket fungerar därmed som ett maktmedel som kan öppna eller stänga dörrar i olika sociala fält.
+      </div>
+    </section>
+
+    <section>
+      <h2>Klädsmak och möjligheter i olika sociala sammanhang</h2>
+      <p>Enligt Bourdieu är klädsmak inte bara en fråga om personlig stil, utan också om makt, tillhörighet och status. Genom kläder visar individer vilken grupp de tillhör eller vill tillhöra.</p>
+
+      <h3>Klädsmak i arbetsintervjuer och akademiska sammanhang</h3>
+      <p>I fält som arbetsmarknaden eller akademin finns tydliga normer för hur man förväntas klä sig. En person vars habitus matchar dessa normer vet ofta automatiskt hur man bör klä sig, till exempel genom att bära kostym eller diskreta kläder.</p>
+      <p>Detta kan ge symboliskt kapital i form av att personen uppfattas som seriös, kompetent och passande för rollen. Att bryta mot dessa normer kan istället bli en nackdel.</p>
+
+      <h3>Klädsmak i kreativa fält och subkulturer</h3>
+      <p>I kreativa fält, som streetkultur eller musikvärlden, gäller andra regler. Här kan unika kläder, dyra sneakers eller en trendmedveten stil ge status.</p>
+      <p>Kulturellt kapital i form av modekunskap och ekonomiskt kapital i form av dyra märken kan omvandlas till symboliskt kapital inom detta fält.</p>
+    </section>
+
+    <section>
+      <h2>Varför förändras inte samhällsstrukturen över tid?</h2>
+      <p>Utifrån Bourdieus tankesätt förändras inte samhällsstrukturen särskilt mycket eftersom människor ofta formas av och agerar utifrån samma mönster generation efter generation.</p>
+
+      <h3>Habitus och reproduktion</h3>
+      <p>Eftersom människor växer upp i liknande sociala villkor som sina föräldrar utvecklar de ofta ett liknande habitus. Detta leder till att de gör liknande utbildnings- och yrkesval, vilket bidrar till att samhällsstrukturen återskapas.</p>
+
+      <h3>Fält, kapital och makt</h3>
+      <p>Samhället består av olika fält med egna regler. De som redan har rätt kapital har större chans att lyckas inom dessa fält och behålla sin position.</p>
+
+      <p>Ekonomiskt kapital ger tillgång till bättre skolor och bostadsområden, vilket leder till mer kulturellt kapital i form av utbildning och språklig kompetens. Detta uppskattas inom skolans fält och ger ytterligare fördelar.</p>
+
+      <p>Socialt kapital, såsom kontakter och nätverk, ger tillgång till möjligheter som inte är öppna för alla. När dessa resurser samlas hos samma grupper skapas även symboliskt kapital i form av status och legitimitet.</p>
+
+      <div class="highlight">
+        Resultatet blir att samma grupper ofta behåller makt, inflytande och privilegier över tid.
+      </div>
+    </section>
+
+    <section>
+      <h2>Styrkor och svagheter med Bourdieus teori</h2>
+
+      <h3>Styrkor</h3>
+      <ul>
+        <li>Visar hur ojämlikhet inte bara handlar om pengar utan även om språk, normer och osynliga resurser</li>
+        <li>Förklarar varför social förändring är svår att uppnå</li>
+        <li>Ger verktyg för att analysera makt i vardagliga situationer</li>
+      </ul>
+
+      <h3>Svagheter</h3>
+      <ul>
+        <li>Teorin kan uppfattas som deterministisk och ge lite utrymme för individens fria val</li>
+        <li>Fokuserar mer på stabilitet än på förändring och motstånd</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Studieresurs – Pierre Bourdieu | Dark mode design</p>
+  </footer>
+
 </body>
 </html>
